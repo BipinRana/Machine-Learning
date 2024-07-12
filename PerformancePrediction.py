@@ -36,7 +36,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 # Transform the test data (using the same scaler fitted on training data)
 X_test_scaled = scaler.transform(X_test)
 
-# Initialize RandomForestRegressor for predicting continuous "experience"
+# Initialize RandomForestRegressor for predicting continuous "performance"
 regressor = RandomForestRegressor(n_estimators=100, random_state=42)
 
 # Fit the regressor to the training data
